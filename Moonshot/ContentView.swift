@@ -24,8 +24,8 @@ struct lesson_part_1: View {
        return VStack{
            Text("hello world")
            Image("Example")
+               .resizable()
                .frame(width: 300, height: 300)
-               .clipped()
            
        }
     }
