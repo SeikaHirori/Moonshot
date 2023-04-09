@@ -42,7 +42,7 @@ struct lesson_section_1_3: View {
         return ScrollView {
             VStack {
                 ForEach(0..<100) {
-                    Text("Item \($0)")
+                    CustomText("Item \($0)")
                         .font(.title)
                 }
             }
@@ -50,4 +50,17 @@ struct lesson_section_1_3: View {
         }
     }
     
+}
+
+struct CustomText: View {
+    let text: String
+    
+    var body: some View {
+        Text(text)
+    }
+    
+    init(_ text: String) {
+        print("Creating a new CustomText")
+        self.text = text
+    }
 }
