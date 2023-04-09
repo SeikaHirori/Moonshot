@@ -154,11 +154,21 @@ struct lesson_section_1_5: View {
 
 struct lesson_section_1_6: View {
     
-    
+    let layout: [GridItem] = [
+        GridItem(.fixed(80)),
+        GridItem(.fixed(80)),
+        GridItem(.fixed(80)),
+    ]
     
     var body: some View {
-        return VStack {
-            Text("Hello world!")
+        return ScrollView {
+            LazyVGrid(columns: layout) {
+                ForEach(0..<1000) {
+                    Text("Item \($0)")
+                }
+            }
+            
         }
+        
     }
 }
