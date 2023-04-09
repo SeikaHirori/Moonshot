@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        lesson_section_1_5()
+        lesson_section_1_6()
     }
 }
 
@@ -152,4 +152,13 @@ struct lesson_section_1_5: View {
 }
 
 
-
+struct lesson_section_1_6: View {
+    
+    
+    
+    var body: some View {
+        return VStack {
+            Text("Hello world!")
+        }
+    }
+}
