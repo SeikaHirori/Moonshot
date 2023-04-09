@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        lesson_section_1_6()
+        implementation_part_2()
     }
 }
 
@@ -18,6 +18,16 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct implementation_part_2: View {
+    
+    var body: some View {
+        return VStack {
+            Text("Hello, World!")
+        }
+    }
+}
+
 
 struct lesson_section_1_2: View {
     var body: some View {

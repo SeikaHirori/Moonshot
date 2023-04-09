@@ -23,17 +23,16 @@ Part 1: https://www.hackingwithswift.com/100/swiftui/39
 - [x] 3. How ScrollView lets us work with scrolling data
 - [x] 4. Pushing new views onto the stack using NavigationLink
 - [x] 5. Working with hierarchical Codable data
-- [ ] 6. How to lay out views in a scrolling grid
-    - WIP
+- [x] 6. How to lay out views in a scrolling grid
 
 
 
 Part 2: https://www.hackingwithswift.com/100/swiftui/40
-- [ ] . 
-- [ ] . 
-- [ ] . 
-- [ ] . 
-- [ ] . 
+- [ ] 1. Loading a specific kind of Codable data
+    - WIP
+- [ ] 2. Using generics to load any kind of Codable data
+- [ ] 3. Formatting our mission view
+
 
 
 Part 3: https://www.hackingwithswift.com/100/swiftui/41
