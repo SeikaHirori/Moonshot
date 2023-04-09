@@ -43,3 +43,21 @@ Part 3: https://www.hackingwithswift.com/100/swiftui/41
 Part 4: https://www.hackingwithswift.com/100/swiftui/42
 - [ ] . 
 - [ ] . 
+
+
+------
+# Credits
+Information for astronauts and missions was provided by wikipedia (according to [prompt](https://www.hackingwithswift.com/books/ios-swiftui/loading-a-specific-kind-of-codable-data))
+
+------
+
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg

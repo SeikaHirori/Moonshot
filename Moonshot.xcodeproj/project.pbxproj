@@ -17,6 +17,7 @@
 		3F11B2E429E3221700CA8DCE /* Example.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11B2E329E3221700CA8DCE /* Example.jpg */; };
 		3F11B2E729E371C300CA8DCE /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F11B2E529E371C300CA8DCE /* astronauts.json */; };
 		3F11B2E829E371C300CA8DCE /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F11B2E629E371C300CA8DCE /* missions.json */; };
+		3F11B2EC29E3767D00CA8DCE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3F11B2EB29E3767D00CA8DCE /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3F11B2E329E3221700CA8DCE /* Example.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Example.jpg; sourceTree = "<group>"; };
 		3F11B2E529E371C300CA8DCE /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = astronauts.json; path = "project8-files/astronauts.json"; sourceTree = "<group>"; };
 		3F11B2E629E371C300CA8DCE /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = missions.json; path = "project8-files/missions.json"; sourceTree = "<group>"; };
+		3F11B2EB29E3767D00CA8DCE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				3F11B2E329E3221700CA8DCE /* Example.jpg */,
 				3F11B2E029E314D700CA8DCE /* _docs */,
 				3F11B2DF29E314D400CA8DCE /* README.md */,
+				3F11B2EB29E3767D00CA8DCE /* LICENSE */,
 				3F11B2B429E314C000CA8DCE /* Moonshot */,
 				3F11B2C529E314C200CA8DCE /* MoonshotTests */,
 				3F11B2CF29E314C200CA8DCE /* MoonshotUITests */,
@@ -256,6 +259,7 @@
 			files = (
 				3F11B2E429E3221700CA8DCE /* Example.jpg in Resources */,
 				3F11B2E829E371C300CA8DCE /* missions.json in Resources */,
+				3F11B2EC29E3767D00CA8DCE /* LICENSE in Resources */,
 				3F11B2BD29E314C100CA8DCE /* Preview Assets.xcassets in Resources */,
 				3F11B2BA29E314C100CA8DCE /* Assets.xcassets in Resources */,
 				3F11B2E729E371C300CA8DCE /* astronauts.json in Resources */,
