@@ -19,7 +19,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct lesson_section_1_1: View {
+struct lesson_section_1_2: View {
     var body: some View {
        return VStack{
            Text("hello world")
@@ -35,3 +35,6 @@ struct lesson_section_1_1: View {
        }
     }
 }
+
+
+struct lesson_section
