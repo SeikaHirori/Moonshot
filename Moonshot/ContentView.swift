@@ -82,8 +82,8 @@ struct lesson_section_1_4: View {
 
 struct lesson_section_1_5: View {
     var body: some View {
-        return LazyVStack {
-            Button("Decode JSON") {
+        return VStack {
+            Button("Decode JSON with Taylor Swift") {
                 let input: String = """
 {
     "name": "Taylor Swift",
@@ -105,6 +105,36 @@ struct lesson_section_1_5: View {
                 
                 
             }
+            
+            List(0..<5) { num in
+                let but_name:String = "Button \(num)"
+                
+                Button(but_name) {
+
+                    let input:String = """
+{
+    "name": "Person \(num)",
+    "address": {
+        "street": "street \(num)",
+        "city": "city \(num)"
+    }
+}
+"""
+                    let data = Data(input.utf8)
+                    let decoder: JSONDecoder = JSONDecoder()
+                    
+                    if let user = try? decoder.decode(User.self, from: data) {
+                        print(user.name)
+                        print(user.address.street)
+                        print(user.address.city)
+                        print()
+                    }
+                    
+                    
+                }
+                
+            }
+            
         }
     }
     
