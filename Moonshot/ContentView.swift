@@ -46,6 +46,7 @@ struct lesson_section_1_3: View {
                         .font(.title)
                 }
             }
+            .frame(maxWidth: .infinity)
         }
     }
     
