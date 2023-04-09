@@ -28,7 +28,7 @@ struct lesson_part_1: View {
                Image("Example")
                    .resizable()
                    .scaledToFit()
-                   .frame(width: geo.size.width * 0.8, height: 300)
+                   .frame(width: geo.size.width * 0.8)
     
            }
        }
