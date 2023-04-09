@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        lesson_section_1_3()
+        lesson_section_1_4()
     }
 }
 
@@ -62,5 +62,16 @@ struct CustomText: View {
     init(_ text: String) {
         print("Creating a new CustomText with \(text)")
         self.text = text
+    }
+}
+
+struct lesson_section_1_4: View {
+    var body: some View {
+        return NavigationView {
+            Text("Hello, world!")
+                .padding()
+                .navigationTitle("SwiftUI")
+        }
+        
     }
 }
