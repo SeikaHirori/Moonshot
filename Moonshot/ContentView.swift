@@ -39,8 +39,8 @@ struct lesson_section_1_2: View {
 
 struct lesson_section_1_3: View {
     var body: some View {
-        return ScrollView() {
-            LazyVStack {
+        return ScrollView(.horizontal) {
+            LazyHStack {
                 ForEach(0..<100) {
                     CustomText("Item \($0)")
                         .font(.title)
