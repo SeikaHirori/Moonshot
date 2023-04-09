@@ -155,7 +155,7 @@ struct lesson_section_1_5: View {
 struct lesson_section_1_6: View {
     
     let layout: [GridItem] = [
-        GridItem(.adaptive(minimum: 80)),
+        GridItem(.adaptive(minimum: 80, maximum: 120)),
     ]
     
     var body: some View {
