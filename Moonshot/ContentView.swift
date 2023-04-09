@@ -22,9 +22,9 @@ struct ContentView_Previews: PreviewProvider {
 struct lesson_part_1: View {
     var body: some View {
        return VStack{
-        
            Text("hello world")
            Image("Example")
+               .frame(width: 300, height: 300)
            
        }
     }
