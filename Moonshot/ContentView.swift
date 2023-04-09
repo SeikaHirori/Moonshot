@@ -50,20 +50,21 @@ struct lesson_section_1_3: View {
         }
     }
     
+    struct CustomText: View {
+        let text: String
+        
+        var body: some View {
+            Text(text)
+        }
+        
+        init(_ text: String) {
+            print("Creating a new CustomText with \(text)")
+            self.text = text
+        }
+    }
+
 }
 
-struct CustomText: View {
-    let text: String
-    
-    var body: some View {
-        Text(text)
-    }
-    
-    init(_ text: String) {
-        print("Creating a new CustomText with \(text)")
-        self.text = text
-    }
-}
 
 struct lesson_section_1_4: View {
     var body: some View {
@@ -149,5 +150,6 @@ struct lesson_section_1_5: View {
     }
     
 }
+
 
 
