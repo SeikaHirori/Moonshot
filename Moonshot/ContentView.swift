@@ -28,7 +28,6 @@ struct implementation_part_2: View {
     }
 }
 
-
 struct lesson_section_1_2: View {
     var body: some View {
        return VStack{
