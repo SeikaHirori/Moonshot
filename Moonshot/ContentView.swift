@@ -94,7 +94,16 @@ struct lesson_section_1_5: View {
 }
 """
                 
-                /// More code to  come
+                let data = Data(input.utf8)
+                let decoder = JSONDecoder()
+                if let user = try? decoder.decode(User.self, from:data) {
+                    print(user.name)
+                    print(user.address.street)
+                    print(user.address.city)
+                    print()
+                }
+                
+                
             }
         }
     }
