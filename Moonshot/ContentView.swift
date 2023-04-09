@@ -96,4 +96,17 @@ struct lesson_section_1_5: View {
             }
         }
     }
+    
+    struct User: Codable {
+        let name: String
+        let address: Address
+    }
+    
+    struct Address: Codable {
+        let street: String
+        let city: String
+    }
+    
 }
+
+
