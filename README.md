@@ -18,7 +18,7 @@ Project 8 Specifications:
 
 Part 1: https://www.hackingwithswift.com/100/swiftui/39
 
-- [ ] 1. Moonshot: Introduction
+- [x] 1. Moonshot: Introduction
 - [ ] 2. Resizing images to fit the screen using GeometryReader
 - [ ] 3. How ScrollView lets us work with scrolling data
 - [ ] 4. Pushing new views onto the stack using NavigationLink
