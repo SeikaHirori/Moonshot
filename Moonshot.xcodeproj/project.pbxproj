@@ -14,6 +14,7 @@
 		3F11B2C729E314C200CA8DCE /* MoonshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2C629E314C200CA8DCE /* MoonshotTests.swift */; };
 		3F11B2D129E314C200CA8DCE /* MoonshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2D029E314C200CA8DCE /* MoonshotUITests.swift */; };
 		3F11B2D329E314C200CA8DCE /* MoonshotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2D229E314C200CA8DCE /* MoonshotUITestsLaunchTests.swift */; };
+		3F11B2E429E3221700CA8DCE /* Example.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11B2E329E3221700CA8DCE /* Example.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		3F11B2D229E314C200CA8DCE /* MoonshotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3F11B2DF29E314D400CA8DCE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3F11B2E129E314E500CA8DCE /* rfer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = rfer.md; sourceTree = "<group>"; };
+		3F11B2E229E321E700CA8DCE /* credits.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = credits.md; sourceTree = "<group>"; };
+		3F11B2E329E3221700CA8DCE /* Example.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Example.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,7 @@
 		3F11B2A929E314C000CA8DCE = {
 			isa = PBXGroup;
 			children = (
+				3F11B2E329E3221700CA8DCE /* Example.jpg */,
 				3F11B2E029E314D700CA8DCE /* _docs */,
 				3F11B2DF29E314D400CA8DCE /* README.md */,
 				3F11B2B429E314C000CA8DCE /* Moonshot */,
@@ -135,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				3F11B2E129E314E500CA8DCE /* rfer.md */,
+				3F11B2E229E321E700CA8DCE /* credits.md */,
 			);
 			path = _docs;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F11B2E429E3221700CA8DCE /* Example.jpg in Resources */,
 				3F11B2BD29E314C100CA8DCE /* Preview Assets.xcassets in Resources */,
 				3F11B2BA29E314C100CA8DCE /* Assets.xcassets in Resources */,
 			);
