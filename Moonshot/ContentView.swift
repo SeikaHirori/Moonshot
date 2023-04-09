@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        lesson_section_1_4()
+        lesson_section_1_5()
     }
 }
 
@@ -76,6 +76,24 @@ struct lesson_section_1_4: View {
                 }
             }
             .navigationTitle("SwiftUI")
+        }
+    }
+}
+
+struct lesson_section_1_5: View {
+    var body: some View {
+        return LazyVStack {
+            Button("Decode JSON") {
+                let input: String = """
+{
+    "name": "Taylor Swift",
+    "address": {
+        "street": "555, Taylor Swift Avenue",
+        "city": "Nashville"
+    }
+}
+"""
+            }
         }
     }
 }
