@@ -68,15 +68,14 @@ struct CustomText: View {
 struct lesson_section_1_4: View {
     var body: some View {
         return NavigationStack {
-            NavigationLink {
-                Text("Detail View")
-            } label: {
-                Text("Hello, world!")
-                    .padding()
-                
+            List(0..<100) { row in
+                NavigationLink {
+                    Text("Detail \(row)")
+                } label: {
+                    Text("Row \(row)")
+                }
             }
             .navigationTitle("SwiftUI")
         }
-        
     }
 }
