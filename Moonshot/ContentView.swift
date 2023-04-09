@@ -25,6 +25,7 @@ struct lesson_part_1: View {
            Text("hello world")
            Image("Example")
                .resizable()
+               .scaledToFit()
                .frame(width: 300, height: 300)
            
        }
