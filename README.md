@@ -21,7 +21,7 @@ Part 1: https://www.hackingwithswift.com/100/swiftui/39
 - [x] 1. Moonshot: Introduction
 - [x] 2. Resizing images to fit the screen using GeometryReader
 - [x] 3. How ScrollView lets us work with scrolling data
-- [ ] 4. Pushing new views onto the stack using NavigationLink
+- [x] 4. Pushing new views onto the stack using NavigationLink
     - WIP
 - [ ] 5. Working with hierarchical Codable data
 - [ ] 6. How to lay out views in a scrolling grid
