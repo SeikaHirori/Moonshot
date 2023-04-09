@@ -158,15 +158,26 @@ struct lesson_section_1_6: View {
         GridItem(.adaptive(minimum: 80, maximum: 120)),
     ]
     
+//    var body: some View {
+//        return ScrollView {
+//            LazyVGrid(columns: layout) {
+//                ForEach(0..<1000) {
+//                    Text("Item \($0)")
+//                }
+//            }
+//
+//        }
+//
+//    }
+    
     var body: some View {
-        return ScrollView {
-            LazyVGrid(columns: layout) {
+        return ScrollView(.horizontal) {
+            LazyHGrid(rows: layout) {
                 ForEach(0..<1000) {
                     Text("Item \($0)")
                 }
             }
-            
         }
-        
     }
+    
 }
