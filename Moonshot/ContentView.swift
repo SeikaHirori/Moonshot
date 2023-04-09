@@ -29,6 +29,7 @@ struct lesson_part_1: View {
                    .resizable()
                    .scaledToFit()
                    .frame(width: geo.size.width * 0.8)
+                   .frame(width: geo.size.width, height: geo.size.height) // This centers the image
     
            }
        }
