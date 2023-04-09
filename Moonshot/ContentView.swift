@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        lesson_part_1()
+        lesson_section_1_3()
     }
 }
 
@@ -37,4 +37,16 @@ struct lesson_section_1_2: View {
 }
 
 
-struct lesson_section
+struct lesson_section_1_3: View {
+    var body: some View {
+        return ScrollView {
+            VStack {
+                ForEach(0..<100) {
+                    Text("Item \($0)")
+                        .font(.title)
+                }
+            }
+        }
+    }
+    
+}
