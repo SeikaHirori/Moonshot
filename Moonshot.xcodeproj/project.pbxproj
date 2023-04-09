@@ -44,6 +44,8 @@
 		3F11B2CC29E314C200CA8DCE /* MoonshotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonshotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F11B2D029E314C200CA8DCE /* MoonshotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotUITests.swift; sourceTree = "<group>"; };
 		3F11B2D229E314C200CA8DCE /* MoonshotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F11B2DF29E314D400CA8DCE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F11B2E129E314E500CA8DCE /* rfer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = rfer.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,8 @@
 		3F11B2A929E314C000CA8DCE = {
 			isa = PBXGroup;
 			children = (
+				3F11B2E029E314D700CA8DCE /* _docs */,
+				3F11B2DF29E314D400CA8DCE /* README.md */,
 				3F11B2B429E314C000CA8DCE /* Moonshot */,
 				3F11B2C529E314C200CA8DCE /* MoonshotTests */,
 				3F11B2CF29E314C200CA8DCE /* MoonshotUITests */,
@@ -125,6 +129,14 @@
 				3F11B2D229E314C200CA8DCE /* MoonshotUITestsLaunchTests.swift */,
 			);
 			path = MoonshotUITests;
+			sourceTree = "<group>";
+		};
+		3F11B2E029E314D700CA8DCE /* _docs */ = {
+			isa = PBXGroup;
+			children = (
+				3F11B2E129E314E500CA8DCE /* rfer.md */,
+			);
+			path = _docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
