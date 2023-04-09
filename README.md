@@ -28,7 +28,7 @@ Part 1: https://www.hackingwithswift.com/100/swiftui/39
 
 
 Part 2: https://www.hackingwithswift.com/100/swiftui/40
-- [ ] 1. Loading a specific kind of Codable data
+- [x] 1. Loading a specific kind of Codable data
     - WIP
 - [ ] 2. Using generics to load any kind of Codable data
 - [ ] 3. Formatting our mission view
