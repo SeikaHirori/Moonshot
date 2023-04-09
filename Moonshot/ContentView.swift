@@ -39,8 +39,8 @@ struct lesson_section_1_2: View {
 
 struct lesson_section_1_3: View {
     var body: some View {
-        return ScrollView {
-            VStack {
+        return ScrollView() {
+            LazyVStack {
                 ForEach(0..<100) {
                     CustomText("Item \($0)")
                         .font(.title)
@@ -60,7 +60,7 @@ struct CustomText: View {
     }
     
     init(_ text: String) {
-        print("Creating a new CustomText")
+        print("Creating a new CustomText with \(text)")
         self.text = text
     }
 }
