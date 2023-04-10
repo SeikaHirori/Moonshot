@@ -35,9 +35,9 @@ Part 2: https://www.hackingwithswift.com/100/swiftui/40
 
 
 Part 3: https://www.hackingwithswift.com/100/swiftui/41
-- [ ] 1. Showing mission details with ScrollView and GeometryReader
-    - WIP
+- [x] 1. Showing mission details with ScrollView and GeometryReader
 - [ ] 2. Merging Codable structs
+    - WIP
 - [ ] 3. Finishing up with one last view
 
 
