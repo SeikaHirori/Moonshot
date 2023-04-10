@@ -86,10 +86,10 @@ struct MissionView: View {
                                     Image(crewMember.astronaut.id)
                                         .resizable()
                                         .frame(width: 104, height: 72)
-                                        .clipShape(Capsule())
+                                        .clipShape(Circle())
                                         .overlay(
-                                            Capsule()
-                                                .strokeBorder(.white, lineWidth: 1)
+                                            Circle()
+                                                .strokeBorder(.white, lineWidth: 3)
                                         )
                                     
                                     VStack(alignment: .leading) {
@@ -98,7 +98,7 @@ struct MissionView: View {
                                             .font(.headline)
                                         
                                         Text(crewMember.role)
-                                            .foregroundColor(.secondary)
+                                            .foregroundColor(crewMember.role == "Command Pilot" ? .teal : .secondary)
                                     }
                                     
                                 }
