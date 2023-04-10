@@ -39,3 +39,12 @@ struct MissionView: View {
         .background(.darkBackground)
     }
 }
+
+struct MissionView_Previews: PreviewProvider {
+    static let missions: [Mission] = Bundle.main.decode("missions.json")
+    
+    static var previews: some View {
+        MissionView(mission: missions[0])
+            .preferredColorScheme(.dark)
+    }
+}

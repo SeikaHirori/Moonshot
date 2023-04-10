@@ -38,5 +38,15 @@ struct imageLabelView: View {
             RoundedRectangle(cornerRadius: 10)
                 .stroke(.lightBackground)
         )
+        
     }
 }
+
+struct imageLabelView_Previews: PreviewProvider {
+    static let missions: [Mission] = Bundle.main.decode("missions.json")
+    
+    static var previews: some View {
+        imageLabelView(mission: missions[0])
+    }
+}
+
