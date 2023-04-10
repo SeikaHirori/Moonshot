@@ -22,6 +22,8 @@ struct ContentView_Previews: PreviewProvider {
 struct implementation_part_2: View {
     
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
+    let mission: [Mission] = Bundle.main.decode("mission.json")
+    
     
     var body: some View {
         return VStack {
