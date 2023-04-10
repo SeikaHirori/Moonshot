@@ -65,8 +65,10 @@ struct implementation_part_2: View {
                 VStack {
                     Text(mission.displayName)
                         .font(.headline)
+                        .foregroundColor(.white)
                     Text(mission.formattedLaunchDate)
                         .font(.caption)
+                        .foregroundColor(.white.opacity(0.5))
                 }
                 .padding(.vertical)
                 .frame(maxWidth: .infinity)
