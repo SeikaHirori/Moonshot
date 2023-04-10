@@ -57,6 +57,7 @@ struct implementation_part_2: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 100, height: 100)
+                    .padding()
                 
                 VStack {
                     Text(mission.displayName)
