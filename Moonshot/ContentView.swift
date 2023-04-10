@@ -29,9 +29,33 @@ struct implementation_part_2: View {
     
     var body: some View {
         return NavigationStack {
-            Text("Hello, World!")
-            
-            Text("\(astronauts.count)")
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(mission) { mission in
+                        NavigationLink {
+                            VStack {
+                                Text("Detail view")
+                            }
+                        } label: {
+                            VStack {
+                                Image(mission.image)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 100, height: 100)
+                                
+                                VStack {
+                                    Text(mission.displayName)
+                                        .font(.headline)
+                                    Text(mission.launchDate ?? "N/A")
+                                        .font(.caption)
+                                }
+                                .frame(maxWidth: .infinity)
+                            }
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Moonshot")
         }
     }
 }
