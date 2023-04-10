@@ -37,7 +37,8 @@ struct implementation_part_2: View {
                                 Text("Detail view")
                             }
                         } label: {
-                            imageLabel(mission: mission)                        }
+                            imageLabel(mission: mission)
+                        }
                     }
                 }
             }
@@ -65,11 +66,8 @@ struct implementation_part_2: View {
                 }
                 .frame(maxWidth: .infinity)
             }
-            
         }
-
     }
-    
 }
 
 struct lesson_section_1_2: View {
