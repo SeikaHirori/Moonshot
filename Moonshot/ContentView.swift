@@ -22,7 +22,9 @@ struct ContentView_Previews: PreviewProvider {
 struct implementation_part_2: View {
     
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
-    let mission: [Mission] = Bundle.main.decode("mission.json")
+    let mission: [Mission] = Bundle.main.decode("missions.json")
+    
+    let columns:[GridItem] = [GridItem(.adaptive(minimum: 150))]
     
     
     var body: some View {
