@@ -37,6 +37,8 @@ struct MissionView: View {
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding()
                     
+                    customDivider()
+                    
                     VStack(alignment: .leading) {
                         Text("Mission Highlights")
                             .font(.title.bold())
@@ -46,9 +48,7 @@ struct MissionView: View {
                     }
                     .padding(.horizontal)
                     
-                    Divider() // RFER #2
-                        .foregroundColor(.lightBackground)
-                        .padding(.vertical)
+                    customDivider()
                     
                     crewRoster(crew: crew)
                     
@@ -70,36 +70,56 @@ struct MissionView: View {
         let crew: [CrewMember]
         
         var body: some View {
-            return ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(crew, id: \.role) { crewMember in
-                        NavigationLink {
-                            Text("Astronaut details")
-                        } label: {
-                            HStack {
-                                Image(crewMember.astronaut.id)
-                                    .resizable()
-                                    .frame(width: 104, height: 72)
-                                    .clipShape(Capsule())
-                                    .overlay(
-                                        Capsule()
-                                            .strokeBorder(.white, lineWidth: 1)
-                                    )
-                                
-                                VStack(alignment: .leading) {
-                                    Text(crewMember.astronaut.name)
-                                        .foregroundColor(.white)
-                                        .font(.headline)
+            
+            return VStack(alignment: .leading) {
+                Text("Crew Members")
+                    .font(.title.bold())
+                    .padding(.bottom, 5)
+
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(crew, id: \.role) { crewMember in
+                            NavigationLink {
+                                Text("Astronaut details")
+                            } label: {
+                                HStack {
+                                    Image(crewMember.astronaut.id)
+                                        .resizable()
+                                        .frame(width: 104, height: 72)
+                                        .clipShape(Capsule())
+                                        .overlay(
+                                            Capsule()
+                                                .strokeBorder(.white, lineWidth: 1)
+                                        )
                                     
-                                    Text(crewMember.role)
-                                        .foregroundColor(.secondary)
+                                    VStack(alignment: .leading) {
+                                        Text(crewMember.astronaut.name)
+                                            .foregroundColor(.white)
+                                            .font(.headline)
+                                        
+                                        Text(crewMember.role)
+                                            .foregroundColor(.secondary)
+                                    }
+                                    
                                 }
+                                .padding(.horizontal)
                                 
                             }
-                            .padding(.horizontal)
                         }
                     }
                 }
+            }
+            .padding(.horizontal)
+        }
+    }
+    
+    struct customDivider: View {
+        var body: some View {
+            return VStack {
+                Rectangle()
+                    .frame(height: 2)
+                    .foregroundColor(.lightBackground)
+                    .padding(.vertical)
             }
         }
     }
