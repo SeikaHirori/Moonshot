@@ -28,7 +28,7 @@ struct implementation_part_2: View {
     
     
     var body: some View {
-        return VStack {
+        return NavigationStack {
             Text("Hello, World!")
             
             Text("\(astronauts.count)")
