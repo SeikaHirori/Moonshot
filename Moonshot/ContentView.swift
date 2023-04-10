@@ -41,6 +41,8 @@ struct implementation_part_2: View {
                         }
                     }
                 }
+                .padding([.horizontal, .bottom])
+
             }
             .navigationTitle("Moonshot")
         }
@@ -74,7 +76,6 @@ struct implementation_part_2: View {
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(.lightBackground)
             )
-            .padding([.horizontal, .bottom])
         }
     }
 }
