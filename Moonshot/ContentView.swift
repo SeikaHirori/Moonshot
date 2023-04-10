@@ -46,6 +46,7 @@ struct implementation_part_2: View {
             }
             .navigationTitle("Moonshot")
             .background(.darkBackground)
+            .preferredColorScheme(.dark)
         }
     }
     
