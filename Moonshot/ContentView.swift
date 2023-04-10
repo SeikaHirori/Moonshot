@@ -37,27 +37,39 @@ struct implementation_part_2: View {
                                 Text("Detail view")
                             }
                         } label: {
-                            VStack {
-                                Image(mission.image)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
-                                
-                                VStack {
-                                    Text(mission.displayName)
-                                        .font(.headline)
-                                    Text(mission.launchDate ?? "N/A")
-                                        .font(.caption)
-                                }
-                                .frame(maxWidth: .infinity)
-                            }
-                        }
+                            imageLabel(mission: mission)                        }
                     }
                 }
             }
             .navigationTitle("Moonshot")
         }
     }
+    
+    
+    struct imageLabel: View {
+        let mission: Mission
+        
+        var body: some View {
+            
+            return VStack {
+                Image(mission.image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100, height: 100)
+                
+                VStack {
+                    Text(mission.displayName)
+                        .font(.headline)
+                    Text(mission.launchDate ?? "N/A")
+                        .font(.caption)
+                }
+                .frame(maxWidth: .infinity)
+            }
+            
+        }
+
+    }
+    
 }
 
 struct lesson_section_1_2: View {
