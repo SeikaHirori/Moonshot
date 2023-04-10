@@ -34,10 +34,10 @@ struct implementation_part_2: View {
                     ForEach(mission) { mission in
                         NavigationLink {
                             VStack {
-                                Text("Detail view")
+                                MissionView(mission: mission)
                             }
                         } label: {
-                            imageLabel(mission: mission)
+                            imageLabelView(mission: mission)
                         }
                     }
                 }
@@ -51,7 +51,7 @@ struct implementation_part_2: View {
     }
     
     
-    struct imageLabel: View {
+    struct imageLabelView: View {
         let mission: Mission
         
         var body: some View {

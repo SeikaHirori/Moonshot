@@ -22,6 +22,7 @@
 		3F11B2F029E37E2300CA8DCE /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2EF29E37E2300CA8DCE /* Bundle-Decodable.swift */; };
 		3F11B2F229E46D1300CA8DCE /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2F129E46D1300CA8DCE /* Mission.swift */; };
 		3F11B2F429E4949600CA8DCE /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2F329E4949600CA8DCE /* Color-Theme.swift */; };
+		3F11B2F629E49B3200CA8DCE /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2F529E49B3200CA8DCE /* MissionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		3F11B2EF29E37E2300CA8DCE /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		3F11B2F129E46D1300CA8DCE /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		3F11B2F329E4949600CA8DCE /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
+		3F11B2F529E49B3200CA8DCE /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				3F11B2EF29E37E2300CA8DCE /* Bundle-Decodable.swift */,
 				3F11B2F129E46D1300CA8DCE /* Mission.swift */,
 				3F11B2F329E4949600CA8DCE /* Color-Theme.swift */,
+				3F11B2F529E49B3200CA8DCE /* MissionView.swift */,
 			);
 			path = Moonshot;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F11B2F629E49B3200CA8DCE /* MissionView.swift in Sources */,
 				3F11B2EE29E37DC200CA8DCE /* Astronaut.swift in Sources */,
 				3F11B2F429E4949600CA8DCE /* Color-Theme.swift in Sources */,
 				3F11B2B829E314C000CA8DCE /* ContentView.swift in Sources */,
