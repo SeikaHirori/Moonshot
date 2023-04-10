@@ -34,7 +34,7 @@ struct implementation_part_2: View {
                     ForEach(mission) { mission in
                         NavigationLink {
                             VStack {
-                                MissionView(mission: mission)
+                                MissionView(mission: mission, astronauts: astronauts)
                             }
                         } label: {
                             imageLabelView(mission: mission)
