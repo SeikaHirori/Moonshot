@@ -46,6 +46,10 @@ struct MissionView: View {
                     }
                     .padding(.horizontal)
                     
+                    Divider() // RFER #2
+                        .foregroundColor(.lightBackground)
+                        .padding(.vertical)
+                    
                     crewRoster(crew: crew)
                     
                 }
