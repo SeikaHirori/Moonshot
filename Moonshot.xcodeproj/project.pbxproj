@@ -22,8 +22,8 @@
 		3F11B2F229E46D1300CA8DCE /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2F129E46D1300CA8DCE /* Mission.swift */; };
 		3F11B2F429E4949600CA8DCE /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2F329E4949600CA8DCE /* Color-Theme.swift */; };
 		3F11B2F629E49B3200CA8DCE /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2F529E49B3200CA8DCE /* MissionView.swift */; };
-		3F11B2F829E49DD500CA8DCE /* ImageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2F729E49DD500CA8DCE /* ImageLabelView.swift */; };
 		3F11B2FC29E4C31300CA8DCE /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11B2FB29E4C31300CA8DCE /* AstronautView.swift */; };
+		3F4149A329E5DB630093122E /* ImageVerticalLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4149A229E5DB630093122E /* ImageVerticalLabelView.swift */; };
 		3F68AF2C29E5AF15005C154C /* MissionGridPOV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F68AF2B29E5AF15005C154C /* MissionGridPOV.swift */; };
 		3F68AF2E29E5D6C2005C154C /* MissionListPOV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F68AF2D29E5D6C2005C154C /* MissionListPOV.swift */; };
 		3F68AF3129E5D957005C154C /* imageHorizontalLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F68AF3029E5D957005C154C /* imageHorizontalLabelView.swift */; };
@@ -68,8 +68,8 @@
 		3F11B2F129E46D1300CA8DCE /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		3F11B2F329E4949600CA8DCE /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		3F11B2F529E49B3200CA8DCE /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
-		3F11B2F729E49DD500CA8DCE /* ImageLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelView.swift; sourceTree = "<group>"; };
 		3F11B2FB29E4C31300CA8DCE /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
+		3F4149A229E5DB630093122E /* ImageVerticalLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVerticalLabelView.swift; sourceTree = "<group>"; };
 		3F68AF2B29E5AF15005C154C /* MissionGridPOV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionGridPOV.swift; sourceTree = "<group>"; };
 		3F68AF2D29E5D6C2005C154C /* MissionListPOV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListPOV.swift; sourceTree = "<group>"; };
 		3F68AF3029E5D957005C154C /* imageHorizontalLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageHorizontalLabelView.swift; sourceTree = "<group>"; };
@@ -138,10 +138,10 @@
 				3F11B2F129E46D1300CA8DCE /* Mission.swift */,
 				3F11B2F329E4949600CA8DCE /* Color-Theme.swift */,
 				3F11B2F529E49B3200CA8DCE /* MissionView.swift */,
-				3F11B2F729E49DD500CA8DCE /* ImageLabelView.swift */,
 				3F68AF2B29E5AF15005C154C /* MissionGridPOV.swift */,
 				3F68AF2D29E5D6C2005C154C /* MissionListPOV.swift */,
 				3F68AF3029E5D957005C154C /* imageHorizontalLabelView.swift */,
+				3F4149A229E5DB630093122E /* ImageVerticalLabelView.swift */,
 			);
 			path = Moonshot;
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 				3F68AF3129E5D957005C154C /* imageHorizontalLabelView.swift in Sources */,
 				3F11B2F429E4949600CA8DCE /* Color-Theme.swift in Sources */,
 				3F11B2B829E314C000CA8DCE /* ContentView.swift in Sources */,
-				3F11B2F829E49DD500CA8DCE /* ImageLabelView.swift in Sources */,
+				3F4149A329E5DB630093122E /* ImageVerticalLabelView.swift in Sources */,
 				3F68AF2E29E5D6C2005C154C /* MissionListPOV.swift in Sources */,
 				3F11B2F229E46D1300CA8DCE /* Mission.swift in Sources */,
 				3F11B2F029E37E2300CA8DCE /* Bundle-Decodable.swift in Sources */,
