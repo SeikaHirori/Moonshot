@@ -39,7 +39,7 @@ struct implementation_part_2: View {
                     
                 }
             }
-            .rotation3DEffect(.degrees(layoutAnimation), axis: (x: 0, y: 1, z: 0))
+            .animation(.interpolatingSpring(stiffness: 50, damping: 1), value: layoutAnimation)
             .navigationTitle("Moonshot")
             .background(.darkBackground)
             .preferredColorScheme(.dark)
@@ -48,7 +48,7 @@ struct implementation_part_2: View {
                     Button("Change View") {
                         useGrid.toggle()
                         withAnimation {
-                            layoutAnimation += 360
+                            layoutAnimation += 1.0
                         }
                     }
                     .padding()
