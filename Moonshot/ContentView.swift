@@ -25,7 +25,7 @@ struct implementation_part_2: View {
     let missions: [Mission] = Bundle.main.decode("missions.json")
     
     @State private var useGrid: Bool = false
-    
+    @State private var layoutAnimation: Double = 0.0
     
     
     var body: some View {
@@ -39,14 +39,19 @@ struct implementation_part_2: View {
                     
                 }
             }
+            .rotation3DEffect(.degrees(layoutAnimation), axis: (x: 0, y: 1, z: 0))
             .navigationTitle("Moonshot")
             .background(.darkBackground)
             .preferredColorScheme(.dark)
             .toolbar {
-                ToolbarItem {
+                ToolbarItem(placement:.automatic) {
                     Button("Change View") {
                         useGrid.toggle()
+                        withAnimation {
+                            layoutAnimation += 360
+                        }
                     }
+                    .padding()
                     .background(.lightBackground)
                     .preferredColorScheme(.dark)
                     .clipShape(Capsule())
