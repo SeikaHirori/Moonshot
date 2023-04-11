@@ -30,6 +30,7 @@ struct implementation_part_2: View {
     var body: some View {
         return NavigationStack {
             ScrollView {
+                // Challenge #3; add Match switch here
                 LazyVGrid(columns: columns) {
                     ForEach(mission) { mission in
                         NavigationLink {
