@@ -142,6 +142,7 @@ struct MissionView_Previews: PreviewProvider {
     
     static var previews: some View {
         MissionView(mission: missions[0], astronauts: astronauts)
+            .background(.darkBackground)
             .preferredColorScheme(.dark)
     }
 }

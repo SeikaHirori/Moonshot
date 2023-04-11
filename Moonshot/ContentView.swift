@@ -22,32 +22,33 @@ struct ContentView_Previews: PreviewProvider {
 struct implementation_part_2: View {
     
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
-    let mission: [Mission] = Bundle.main.decode("missions.json")
+    let missions: [Mission] = Bundle.main.decode("missions.json")
     
-    let columns:[GridItem] = [GridItem(.adaptive(minimum: 150))]
+    @State private var useGrid: Bool = true
+    
     
     
     var body: some View {
         return NavigationStack {
             ScrollView {
                 // Challenge #3; add Match switch here
-                LazyVGrid(columns: columns) {
-                    ForEach(mission) { mission in
-                        NavigationLink {
-                            VStack {
-                                MissionView(mission: mission, astronauts: astronauts)
-                            }
-                        } label: {
-                            imageLabelView(mission: mission)
-                        }
-                    }
+                if useGrid {
+                    MissionGridPOV(missions: missions, astronauts: astronauts)
+                } else {
+                    MissionListPOV(astronauts: astronauts, missions: missions)
+                    
                 }
-                .padding([.horizontal, .bottom])
-
             }
             .navigationTitle("Moonshot")
             .background(.darkBackground)
             .preferredColorScheme(.dark)
+            .toolbar {
+                ToolbarItem {
+                    Button("test") {
+                        useGrid.toggle()
+                    }
+                }
+            }
         }
     }
 }

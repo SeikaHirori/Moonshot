@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 
-struct imageLabelView: View {
+struct imageVerticalLabelView: View {
     let mission: Mission
     
     var body: some View {
@@ -42,11 +42,11 @@ struct imageLabelView: View {
     }
 }
 
-struct imageLabelView_Previews: PreviewProvider {
+struct imageVerticalLabelView_Previews: PreviewProvider {
     static let missions: [Mission] = Bundle.main.decode("missions.json")
     
     static var previews: some View {
-        imageLabelView(mission: missions[0])
+        imageVerticalLabelView(mission: missions[0])
     }
 }
 
