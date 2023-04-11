@@ -41,7 +41,7 @@ Part 3: https://www.hackingwithswift.com/100/swiftui/41
 
 
 Part 4 | Challenges : https://www.hackingwithswift.com/100/swiftui/42 
-- [ ] 1. Add the launch date to MissionView, below the mission badge. You might choose to format this differently given that more space is available, but it’s down to you.
+- [x] 1. Add the launch date to MissionView, below the mission badge. You might choose to format this differently given that more space is available, but it’s down to you.
 - [x] 2. Extract one or two pieces of view code into their own new SwiftUI views – the horizontal scroll view in MissionView is a great candidate, but if you followed my styling then you could also move the Rectangle dividers out too.
     - Already refactor'd and moved into their own struct view
 - [ ] 3. For a tough challenge, add a toolbar item to ContentView that toggles between showing missions as a grid and as a list.

@@ -44,6 +44,15 @@ struct MissionView: View {
                             .font(.title.bold())
                             .padding(.bottom, 5)
                         
+                        Text(mission.formattedLaunchDate)
+                            .font(
+                                .title3
+                                .bold()
+                                .italic()
+                            )
+                        
+                        Spacer()
+                        
                         Text(mission.description)
                     }
                     .padding(.horizontal)
