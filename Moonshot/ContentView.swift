@@ -24,7 +24,7 @@ struct implementation_part_2: View {
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     let missions: [Mission] = Bundle.main.decode("missions.json")
     
-    @State private var useGrid: Bool = true
+    @State private var useGrid: Bool = false
     
     
     
@@ -44,9 +44,12 @@ struct implementation_part_2: View {
             .preferredColorScheme(.dark)
             .toolbar {
                 ToolbarItem {
-                    Button("test") {
+                    Button("Change View") {
                         useGrid.toggle()
                     }
+                    .background(.lightBackground)
+                    .preferredColorScheme(.dark)
+                    .clipShape(Capsule())
                 }
             }
         }
